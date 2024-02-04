@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace StudyCenter.Domain.Dtos.Subject
 {
-    internal class SubjectUpdateDto
+    public class SubjectUpdateDto
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
