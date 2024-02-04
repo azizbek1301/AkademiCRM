@@ -46,7 +46,7 @@
           "Port": 5256
         }
       ],
-      "UpstreamPathTemplate": "/ById/{Id}",
+      "UpstreamPathTemplate": "/adminById/{Id}",
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
@@ -58,12 +58,73 @@
           "Port": 5256
         }
       ],
-      "UpstreamPathTemplate": "/update",
+      "UpstreamPathTemplate": "/adminUpdate",
       "UpstreamHttpMethod": [ "Put" ]
     },
 
+    // Events
+    {
+      "DownstreamPathTemplate": "/api/Event/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ],
+      "UpstreamPathTemplate": "/allEvent",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Event/Create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ],
+      "UpstreamPathTemplate": "/createEvent",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Event/Delete?id={Id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ],
+      "UpstreamPathTemplate": "/deleteEvent/{Id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Event/GetById?id={Id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ],
+      "UpstreamPathTemplate": "/eventById/{Id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Event/Update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ],
+      "UpstreamPathTemplate": "/eventUpdate",
+      "UpstreamHttpMethod": [ "Put" ]
+    }
 
-    
+
 
   ],
   "GlobalConfiguration": {
