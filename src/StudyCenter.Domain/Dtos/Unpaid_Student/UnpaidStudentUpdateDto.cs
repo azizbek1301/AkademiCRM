@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace StudyCenter.Domain.Dtos.Unpaid_Student
 {
-    internal class UnpaidStudentUpdateDto
+    public class UnpaidStudentUpdateDto
     {
+        public int Id { get; set; }
+        public int StudentId { get; set; }
+
+        public decimal Price { get; set; }
     }
 }
