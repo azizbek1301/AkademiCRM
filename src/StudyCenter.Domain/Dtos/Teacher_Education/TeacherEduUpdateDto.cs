@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace StudyCenter.Domain.Dtos.Teacher_Education
 {
-    internal class TeacherEduUpdateDto
+    public class TeacherEduUpdateDto
     {
+        public int Id { get; set; }
+        public string EducationName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
     }
 }
