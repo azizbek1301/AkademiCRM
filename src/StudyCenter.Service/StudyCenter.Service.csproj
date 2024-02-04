@@ -6,4 +6,37 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\Event\Command\" />
+    <Folder Include="UseCases\Event\Handler\" />
+    <Folder Include="UseCases\Event\Queries\" />
+    <Folder Include="UseCases\FoodComments\Command\" />
+    <Folder Include="UseCases\FoodComments\Handler\" />
+    <Folder Include="UseCases\FoodComments\Queries\" />
+    <Folder Include="UseCases\Food\Command\" />
+    <Folder Include="UseCases\Food\Handler\" />
+    <Folder Include="UseCases\Food\Queries\" />
+    <Folder Include="UseCases\Food_Categories\Command\" />
+    <Folder Include="UseCases\Food_Categories\Handler\" />
+    <Folder Include="UseCases\Food_Categories\Queries\" />
+    <Folder Include="UseCases\School_Expences\Command\" />
+    <Folder Include="UseCases\School_Expences\Handler\" />
+    <Folder Include="UseCases\School_Expences\Queries\" />
+    <Folder Include="UseCases\Teacher_Educations\Command\" />
+    <Folder Include="UseCases\Teacher_Educations\Queries\" />
+  </ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyCenter.Domain\StudyCenter.Domain.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 </Project>
