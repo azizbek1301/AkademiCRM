@@ -23,5 +23,6 @@ namespace StudyCenter.Infrastructure.Peristance
         public DbSet<Teacher_Education> Teacher_Educations { get; set; }
         public DbSet<TeacherClass> TeacherClasses { get; set; }
         public DbSet<Unpaid_Student> Unpaid_Students { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }
