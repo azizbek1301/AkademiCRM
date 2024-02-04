@@ -1,5 +1,7 @@
 
 
+using Authorizatsiya.Api.Interface;
+using Authorizatsiya.Api.Services;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using StudyCenter.Infrastructure;
@@ -16,8 +18,7 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddAuthorization();
-
-//builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 
 
